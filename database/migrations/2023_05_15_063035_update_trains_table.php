@@ -14,8 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->bigInteger('prezzo');
-            $table->bigInteger('numero_carrozze');
+            //
         });
     }
 
@@ -27,8 +26,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->dropColumn('prezzo');
-            $table->dropColumn('numero_carrozze');
+            //
         });
     }
 };
